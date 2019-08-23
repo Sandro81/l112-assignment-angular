@@ -16,6 +16,6 @@ constructor(private userService: UsersServiceService) {}
     this.users = this.userService.activeUsers;
   }
   onSetToInactive(id: number) {
-    this.userService.setToInactive(id);
+    this.userService.setToActive(id);
   }
 }
