@@ -8,7 +8,7 @@ import { UsersService } from '../services/users-service'
   styleUrls: ['./inactive-users.component.css']
 })
 export class InactiveUsersComponent {
-  @Input() users: string[];
+  users: string[];
   @Output() userSetToActive = new EventEmitter<number>();
 
   constructor(private usersService: UsersService) {}
