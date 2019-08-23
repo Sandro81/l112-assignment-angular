@@ -15,7 +15,7 @@ constructor(private userService: UsersServiceService) {}
   ngOnInit () {
     this.users = this.userService.activeUsers;
   }
-  onSetToActive(id: number) {
+  onSetToInactive(id: number) {
     this.userService.setToActive(id);
   }
 }
